@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.111.3">
+    <title>Pricing example · Bootstrap v5.3</title>
+    <link rel="shortcut icon" href="../Home/cc.png"type="img">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/pricing/">
+
+    
+
+    
+
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="pricing.css" rel="stylesheet">
+    <link href="../Home/offcanvas-navbar.css" rel="stylesheet">
+
+  </head>
+  <body>
+    
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="check" viewBox="0 0 16 16">
+    <title>Check</title>
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+  </symbol>
+</svg>
+
+<div class="container py-3">
+
+
+
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation">
+  <div class="container-fluid">
+
+    <title>Placeholder</title><img src="../Home/b.jpg" width="35px" height="35px"class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
+    <a class="navbar-brand" href="#">S.s.m Arjuni</a>
+    <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="Home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Teachers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Settings</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">English</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Hindi</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<aside class="bd-aside sticky-xl-top text-body-secondary align-self-start mb-3 mb-xl-5 px-2">
+  <nav class="small" id="toc"align="left">
+    <ul class="list-unstyled">
+      <li class="my-2">
+        <button class="btn d-inline-flex align-items-center collapsed border-0" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#contents-collapse" aria-controls="contents-collapse"><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#Tarun">TARUN VARG</a></button>
+      
+        
+        <button class="btn d-inline-flex align-items-center collapsed border-0" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#forms-collapse" aria-controls="forms-collapse"><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#Kisor">Kisor varg</a></button>
+      </li>    
+    </ul>
+  </nav>
+</aside>
+
+
+ <div class="pricing-header p-3 pb-md-4 mx-auto text-center"id="Tarun">
+      <h1 class="display-4 fw-normal">Tarun varg</h1>
+      <p class="fs-5 text-body-secondary">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+    </div>
+  
+
+    
+
+  <main>
+    <div class="row row-cols-1 row-cols-md-2 mb-2 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-2 shadow-sm border-primary">
+          <div class="card-header py-2 text-bg-primary border-primary">
+            <h4 class="my-0 fw-normal">11th</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">850/-<small class="text-body-secondary fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li><h3>17 Student included</h3></li>
+              
+              <li>Phone and email support</li>
+              <li><h3>Help center access</h3></li>
+              <li>no.3489329876</li>
+              <li><h3>email-gn312123@gmail.com</h3></li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-2 shadow-sm border-primary">
+          <div class="card-header py-2 text-bg-primary border-primary">
+            <h4 class="my-0 fw-normal">12th</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">950/-<small class="text-body-secondary fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>30 users included</li>
+              
+              <li>Phone and email support</li>
+              <li>Help center access</li>
+              <li>no.3489329876</li>
+              <li>email-gn312123@gmail.com</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<div class="pricing-header p-3 pb-md-4 mx-auto text-center"id="Kisor">
+      <h1 class="display-4 fw-normal">Kisor varg</h1>
+      <p class="fs-5 text-body-secondary">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+    </div>
+
+<main align="center">
+
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+    <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">10th</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>10 users included</li>
+              <li>2 GB of storage</li>
+              <li>Email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="col">
+        <div class="card mb-4 rounded3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">9th</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>10 users included</li>
+              <li>2 GB of storage</li>
+              <li>Email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">8th</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>10 users included</li>
+              <li>2 GB of storage</li>
+              <li>Email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+      <div class="col-12 col-md">
+        <img class="mb-2" src="../assets/brand/bootstrap-logo.svg" alt="" width="24" height="19">
+        <small class="d-block mb-3 text-body-secondary">&copy; 2017–2023</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Features</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>About</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="../Home/offcanvas-navbar.js"></script>
+
+    
+  </body>
+</html>
